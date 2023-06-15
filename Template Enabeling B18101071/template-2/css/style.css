@@ -1,0 +1,41 @@
+.mr-t{
+    margin-top: 30px;
+}
+
+.cen{
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#co {
+    color: red;
+}
+
+
+.printButton{
+    border: 1px solid blueviolet;
+    width: 100px;
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    color: blueviolet;
+}
+.signout{
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: fixed;
+    bottom: 90px;
+    right: 40px;
+    color: black;
+}
+
+.goBack{
+    margin-bottom: 20px;
+    margin-left: auto;
+}

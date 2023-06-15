@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAP - CV Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="signOut">
+            <button id="signOutButton" class="signO">Sign Out</button>
+        </div>
+        <div class="main">
+            <h1 class="main-heading">Welcome <span id="main-Name" style="text-transform: uppercase;"></span> to CAP - CV Builder</h1>
+            <h4 class="text-main">Select Resume Template</h4>
+        </div>
+        <div class="cv-template">
+            <img src="CV's Img/CV-HK-1.jpg" alt="cv1" id="1" onmouseenter="hover('1')" onmouseleave="leaveHover('1')" onclick="clickMe('1')">
+            <img src="CV's Img/d-1.jpg" alt="cv2"  id="2" onmouseenter="hover('2')" onmouseleave="leaveHover('2')" onclick="clickMe('2')">
+            <img src="CV's Img/CV-M-HK-1.jpg" alt="cv3"  id="3" onmouseenter="hover('3')" onmouseleave="leaveHover('3')" onclick="clickMe('3')">
+            <img src="CV's Img/temp_4-1.jpg" alt="cv4"  id="4" onmouseenter="hover('4')" onmouseleave="leaveHover('4')" onclick="clickMe('4')">
+        </div>
+        <div class="output">
+            <p>Template: <span id="temp"></span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

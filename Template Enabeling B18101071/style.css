@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  text-align: center;
+  margin: 20px;
+}
+
+.cv-template {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cv-template img {
+  width: 19%;
+  padding: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.output {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.text-main {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.signO{
+  border: 2px solid black;
+  background-color: white;
+  font-size: 20px;
+  width: 7%;
+  height: 5%;
+  cursor: pointer;
+}
+.signOut{
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}

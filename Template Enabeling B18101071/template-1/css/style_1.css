@@ -1,0 +1,39 @@
+
+.content_t1{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+.content-t1{
+    width: 70%;
+    margin: auto;
+}
+.head1{
+    background-color: black;
+    display: inline-block;
+    color: white;
+}
+.edit_t1{
+    margin-top: -22px;
+    color: black;
+}
+.blue{
+    color: blue;
+    cursor: pointer;
+}
+.space{
+    letter-spacing: 13px;
+    text-transform: uppercase;
+}
+.acd{
+    background-color: gray;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+.goBack{
+    margin-bottom: 20px;
+    margin-left: auto;
+}

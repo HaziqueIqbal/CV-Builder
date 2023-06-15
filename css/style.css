@@ -1,0 +1,59 @@
+.mr-t{
+    margin-top: 30px;
+}
+
+.cen{
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#co {
+    color: red;
+}
+
+.printButton{
+    border: 1px solid blueviolet;
+    width: 100px;
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    color: blueviolet;
+}
+
+.myi {
+    display: block;
+    /* width: 100%; */
+    background: #f2f2f2;
+    border-radius: 2px;
+  
+    font-family: Raleway-SemiBold;
+    font-size: 20px;
+    color: #686868;
+    line-height: 1.2;
+    padding: 0 28px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  
+    margin-top: 10px;
+  }
+  
+  /*---------------------------------------------*/
+  input.myi {
+    height: 25px;
+  }
+  
+  textarea.myi {
+    min-height: 162px;
+    padding-top: 19px;
+    padding-bottom: 23px;
+  }
+  
+  .myi:focus {
+    background: #e6e6e6;
+  }

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV-Hazique-B18101071</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/temp3.css">
+    <link rel="stylesheet" href="css/style_1.css">
+</head>
+
+<body>
+    <div id="myForm">
+        <div class="container-contact100" style="background-image: url('images/bg-01.jpg');">
+            <div class="wrap-contact100">
+                <form class="contact100-form validate-form">
+
+                    <div class="wrap-contact100-form-btn goBack">
+                        <div class="contact100-form-bgbtn"></div>
+                        <a class="add" id="goBack">Go Back</a>
+                    </div>
+                    <span class="contact100-form-title">
+                        personal information
+                    </span>
+
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+                        <span class="label-input100">Tell us your name *</span>
+                        <input class="input100" type="text" name="name" id="name" required
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                        <span class="label-input100">Mobile Number *</span>
+                        <input class="input100" type="text" name="mob" id="mobileNo" placeholder="03*********">
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Address is required">
+                        <span class="label-input100">Your Address *</span>
+                        <textarea class="input100" name="address" id="address" placeholder="Enter your address"
+                            required></textarea>
+                    </div>
+
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                        <span class="label-input100">Email *</span>
+                        <input class="input100" type="text" name="eMail" id="eMail" placeholder="username@xyz.com">
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                        <span class="label-input100">Date of Birth *</span>
+                        <input class="input100" type="date" name="dob" id="dob" placeholder="dd/mm/yyyy">
+                    </div>
+
+
+
+                    <div class="wrap-input100 validate-input" data-validate="Objective is required">
+                        <span class="label-input100">Your objective *</span>
+                        <textarea class="input100" name="objective" id="obj" placeholder="Enter your objective"
+                            required></textarea>
+                    </div>
+
+                    <span class="contact100-form-title">
+                        Academics details
+                    </span>
+
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                        <span class="label-input100">Enter duration *</span>
+                        <input class="input100 n1" type="text" name="dur" id="acdDur" placeholder="start - end">
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                        <span class="label-input100">Enter your college/school/universuit name *</span>
+                        <input class="input100 n2" type="text" name="csu" id="acdSCU" placeholder="Enter here">
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                        <span class="label-input100">Enter your degree name *</span>
+                        <input class="input100 n3" type="text" id="acdDegree" name="degree" placeholder="Enter here">
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                        <span class="label-input100">Enter your grade*</span>
+                        <input class="input100 n4" type="text" id="acdGrade" name="grade" placeholder="Enter here">
+                    </div>
+
+                    <div class="wrap-contact100-form-btn" id="adding">
+                        <div class="contact100-form-bgbtn"></div>
+                        <a class="add" onclick="addAcademics()">Add more</a>
+                    </div>
+
+                    <span class="contact100-form-title mr-t">
+                        skills
+                    </span>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Enter your skill title *</span>
+                        <input class="input100 s1" type="text" name="skillTitle" id="skillTF" placeholder="Enter title">
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Enter skills *</span>
+                        <input class="input100 s2" type="text" name="skills" id="skillDF" placeholder="Enter here">
+                    </div>
+
+                    <div class="wrap-contact100-form-btn" id="addingSkills">
+                        <div class="contact100-form-bgbtn"></div>
+                        <a class="add" onclick="addSkills()">Add more</a>
+                    </div>
+
+
+                    <span class="contact100-form-title mr-t">
+                        experience
+                    </span>
+
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                        <span class="label-input100">Enter your job *</span>
+                        <input class="input100 e1" type="text" name="job" id="j" placeholder="Enter job">
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                        <span class="label-input100">Enter your company name *</span>
+                        <input class="input100 e2" type="text" name="comp" id="cn" placeholder="Enter company name">
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                        <span class="label-input100">Enter duration *</span>
+                        <input class="input100 e3" type="text" name="durC" id="Cdur" placeholder="start - end">
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+                        <span class="label-input100">Enter company address *</span>
+                        <input class="input100 e4" type="text" name="addressC" id="Caddr" placeholder="Enter address">
+                    </div>
+
+                    <div class="wrap-contact100-form-btn" id="addingExperience">
+                        <div class="contact100-form-bgbtn"></div>
+                        <a class="add" onclick="addExperience()">Add more</a>
+                    </div>
+
+                    <span class="contact100-form-title mr-t">
+                        EXTRA CURRICULAR ACTIVITIES
+                    </span>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Enter your activity title *</span>
+                        <input class="input100 eca1" type="text" name="activitiesTitle" id="extra1" placeholder="Enter title">
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Enter activities details *</span>
+                        <input class="input100 eca2" type="text" name="activities" id="extra2" placeholder="Enter here">
+                    </div>
+
+                    <div class="wrap-contact100-form-btn" id="addingActivities">
+                        <div class="contact100-form-bgbtn"></div>
+                        <a class="add" onclick="addActivities()">Add more</a>
+                    </div>
+
+                    <span class="contact100-form-title mr-t">
+                        reference
+                    </span>
+
+                    <div class="wrap-input100 validate-input">
+                        <span class="label-input100">Enter reference *</span>
+                        <input class="input100" id="ref" type="text" name="reference" placeholder="Enter here">
+                    </div>
+
+                    <span class="label-input100 cen">Check your inputs again before submitting.</span>
+
+
+                    <div class="container-contact100-form-btn">
+                        <div class="wrap-contact100-form-btn">
+                            <div class="contact100-form-bgbtn"></div>
+                            <a class="contact100-form-btn" id="submit_t1">
+                                Submit
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="label-input100 mr-t" id="co" hidden></p>
+                </form>
+            </div>
+
+            <span class="contact100-more">
+                &copy; 2022 All Rights Reserved. CAP - CV Builder
+            </span>
+        </div>
+
+
+    </div>
+    <div id="template-1" style="display: none;">
+        <div class="content_t1" id="cont">
+        </div>
+        <div class="content-t1">
+            <h4 class="head1">OBJECTIVES</h4>
+            <hr class="edit_t1">
+            <p id="para">
+            </p>
+            <h4 class="head1">ACADEMICS</h4>
+            <hr class="edit_t1">
+            <div id="c"></div>
+            <h4 class="head1">EXPERIENCE</h4>
+            <hr class="edit_t1">
+            <ul id="exp_list">
+                <!-- experience -->
+            </ul>
+            <h4 class="head1">EXTRA CURRICULLAR ACTIVITIES</h4>
+            <hr class="edit_t1">
+            <div id="eca">
+                <!-- extra activities -->
+            </div>
+            <h4 class="head1">SKILLS</h4>
+            <hr class="edit_t1">
+            <ul id="skills">
+                <!-- skills -->
+            </ul>
+            <h4 class="head1">REFERENCE</h4>
+            <hr class="edit_t1">
+            <p id="ref1">
+                <!-- reference  -->
+            </p>
+        </div>
+        <button class="printButton" id="pr">Print CV</button>
+        <button class="signout" id="so">Sign Out</button>
+    </div>
+    <script type="module" src="js/app.js"></script>
+    <script src="js/addInfo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <script src="js/getAllInfo.js"></script>
+</body>
+
+</html>

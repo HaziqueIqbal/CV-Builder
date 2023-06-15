@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  width: 80%;
+  margin: auto;
+}
+
+.head {
+  height: 120px;
+  background-color: blueviolet;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.head p {
+  letter-spacing: 5px;
+}
+
+.edit1 {
+  padding: 20px;
+  letter-spacing: 15px;
+  cursor: pointer;
+}
+
+.add p {
+  padding: 3px;
+}
+
+.divide {
+  display: flex;
+}
+
+.set1 {
+  padding: 10px;
+  width: 49.5%;
+  margin-right: auto;
+  text-align: right;
+}
+
+.doc {
+  margin: 10px 0px 0px 0px;
+}
+
+.align {
+  margin-top: 25px;
+}
+
+.heading {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact {
+  text-decoration: none;
+  color: black;
+}
+
+.set2 {
+  width: 49.5%;
+  margin-left: auto;
+  padding: 10px;
+  text-align: left;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.Italic {
+  font-style: italic;
+}
+
+.set3 {
+  width: 0.1%;
+  margin-top: 15px;
+  background-color: grey;
+  height: auto;
+}
+
+.front {
+  height: 100vh;
+  background-color: blueviolet;
+}
+
+.btn-raised {
+  transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+    transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.btn-raised:not([disabled]):active,
+.btn-raised:not([disabled]):focus,
+.btn-raised:not([disabled]):hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transform: translate3d(0, -1px, 0);
+}
+
+.shadow {
+  overflow: hidden;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+}
+
+.shadow:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform 0.5s, opacity 1.5s;
+}
+
+.shadow:active:before {
+  transform: scale(0, 0);
+  opacity: 0.1;
+  transition: 0s;
+}
+
+/* .my-button,
+  .my-2 {
+      margin-bottom: .5rem !important
+  } */
+
+.my-button a {
+  text-decoration: none;
+  color: blueviolet;
+}
+.w-xs {
+  width: 150px;
+}
+
+.btn1 {
+  color: blueviolet !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+}
+
+.bg-white .fill {
+  fill: #448bff;
+}
+
+.center h1 {
+  color: white;
+  letter-spacing: 10px;
+}
+.front {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-animation {
+  color: #fff;
+  opacity: 0;
+}
+.text-animation span {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-size: 50px;
+  font-weight: 600;
+  opacity: 0;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  animation: fade 400ms ease-in-out forwards;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes fade {
+  0% {
+    top: 10px;
+    left: 10px;
+    filter: blur(15px);
+    opacity: 0;
+  }
+  50% {
+    filter: blur(10px);
+    opacity: 0.9;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+/* .head h2 span {
+  transition: 0.3s linear;
+}
+.head h2:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+
+.head h2:hover span:nth-child(2) {
+  margin-left: 70px;
+}
+.head h2:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+} */
+
+#myTemplate3 {
+  display: none;
+}
+
+@media print{
+  .printButton{
+    display: none;
+  }
+}
